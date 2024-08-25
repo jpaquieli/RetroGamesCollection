@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.AddEditGame"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro/Edição de Games"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0000FF"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Desenvolvedora: "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="right"/>
+
+        <EditText
+            android:id="@+id/txtDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Nome da desenvolvedora"
+            android:textColorHint="#33000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Título do jogo: "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="right"/>
+
+        <EditText
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Título do jogo"
+            android:textColorHint="#33000000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Ano lançamento: "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="right"/>
+
+        <EditText
+            android:id="@+id/txtYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Ano lançamento"
+            android:textColorHint="#33000000"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSave"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Salvar"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="#000000"
+                android:layout_marginRight="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Cancelar"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:background="#000000"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/retro"/>
+
+    </FrameLayout>
+
+</LinearLayout>
